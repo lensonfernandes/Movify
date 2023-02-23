@@ -7,6 +7,7 @@ const Header = () => {
         <Logo >
             <img src="/images/logo.svg" alt="" />
         </Logo>
+        <NavMenu> Menu</NavMenu>
     </Nav>
   )
 }
@@ -19,9 +20,9 @@ left:0;
 right: 0;
 height: 70px;
 background-color: #090b13;
-display: flex;
-justify-content: space-space;
-align-items: center;
+display:flex;
+justify-content: space-between;
+align-items:center;
 padding: 0 36px ;
 letter-spacing: 16px;
 z-index : 3;
@@ -38,6 +39,25 @@ const Logo = styled.a`
         display: block;
         width: 100%;
     }
+`
+
+const NavMenu = styled.div`
+
+display: flex;
+align-items: center;
+flex-flow: row nowrap;
+height: 100%;
+justify-content: flex-end;
+margin: 0;
+padding: 0;
+position: relative;
+margin-right: auto;
+margin-left: 25px;
+
+@media  (max-width: 768px) {
+    display: none;
+}
+
 `
 
 
